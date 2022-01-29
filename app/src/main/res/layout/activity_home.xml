@@ -294,7 +294,7 @@
 
 
                 <LinearLayout
-                    android:id="@+id/id_home"
+                    android:id="@+id/id_news"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/background_color_50"

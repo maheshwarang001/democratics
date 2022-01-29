@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Democratics">
         <activity
-            android:name=".newsmain"
-            android:exported="true" />
+            android:name=".NewsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".Articles_main_page"
             android:exported="true"
