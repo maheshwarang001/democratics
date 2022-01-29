@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "69170014833",
+    "project_id": "democratics",
+    "storage_bucket": "democratics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69170014833:android:593c640540964969ff09d0",
+        "android_client_info": {
+          "package_name": "com.example.democratics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69170014833-2pb8a9ou1g4033hcnbrjt3dvljqgjjfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.democratics",
+            "certificate_hash": "e20a529e1a04bc97a7a30c59f7839a0a434ddd69"
+          }
+        },
+        {
+          "client_id": "69170014833-ij5rlbp39389gdo96r76gtjkvp7gm74a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6OmHnLnJ-w2BDSzdMcOi2C3EGnbjXG44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69170014833-ij5rlbp39389gdo96r76gtjkvp7gm74a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
