@@ -16,9 +16,23 @@
     <color name="text_color_description">#616161</color>
     <color name="custom1">#363A43</color>
     <color name="custom2">#363A43</color>
+    <color name="orange">#FFC107</color>
+    <color name="red_200">#e86d6e</color>
+    <color name="red_500">#e03a3c</color>
+    <color name="red_700">#dd292b</color>
+    <color name="black_bg">#121212</color>
+    <color name="black_light">#232323</color>
     <color name="custom3">#7A8089</color>
     <color name="holo_green">#76FF03</color>
     <color name="holo_red"> #ff726f </color>
+    <color name="black_alpha_70">#66000000</color>
+    <color name="white_alpha_85">#DAFFFFFF</color>
+    <color name="white_alpha_70">#B3FFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
+    <color name="off_white">#FAF9F6</color>
+    <color name="button_disabled">#efefef</color>
+
 
 
 </resources>

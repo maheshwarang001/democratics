@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.democratics.News.NewsActivity
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
@@ -38,7 +39,7 @@ class home : AppCompatActivity() {
         id_news.setOnClickListener {
             try {
 
-                val intent = Intent(this, NewsActivity::class.java)
+                val intent = Intent(this,NewsActivity::class.java)
                 startActivity(intent)
             } catch (e: Exception) {
                 Log.e("da", "$e")

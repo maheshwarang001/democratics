@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/category_item_selected_bg.xml" value="0.1615" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/category_item_unselected_dark_bg.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/entertainment_img_background.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/general_img_background.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/grocery_img_background.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/shopping_ing_background.xml" value="0.2203125" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/splash_bg.xml" value="0.137" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/switch_theme_thumb_selector.xml" value="0.137" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/switch_theme_track.xml" value="0.137" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/switch_thumb_theme_false.xml" value="0.137" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/switch_thumb_theme_true.xml" value="0.137" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/correct_option.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_baseline_grade_24.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2203125" />
@@ -19,22 +26,40 @@
         <entry key="..\:/Democratics2/app/src/main/res/drawable/wrong_option.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/font/new_rocker.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout-w1240dp/ic_head_bg.xml" value="0.123046875" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout-w936dp/business_fragment.xml" value="0.14173497267759563" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout-w936dp/politics_fragment.xml" value="0.14173497267759563" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout-w936dp/science_fragment.xml" value="0.14173497267759563" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout-w936dp/sports_fragment.xml" value="0.14173497267759563" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout-w936dp/tech_fragment.xml" value="0.14173497267759563" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout-w936dp/world_fragment.xml" value="0.14173497267759563" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_articles_main_page.xml" value="0.42244224422442245" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_login.xml" value="0.12907608695652173" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_main_news.xml" value="0.16576086956521738" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_news.xml" value="0.12409420289855072" />
-        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_news2.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_news2.xml" value="0.264" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_quiz_question.xml" value="0.15579710144927536" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_register.xml" value="0.15579710144927536" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_result.xml" value="0.15579710144927536" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_startquiz.xml" value="0.1621376811594203" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/business_fragment.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/categories_recycler.xml" value="0.3301476976542137" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/fragment_article_open.xml" value="0.16576086956521738" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/fragment_news.xml" value="0.12182971014492754" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/is_head_bg.xml" value="0.14266304347826086" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/item_news.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/latest_recycler_view.xml" value="0.264" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/national_fragment.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/nav_header.xml" value="0.12907608695652173" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/politics_fragment.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/rv_news_article_layout.xml" value="0.16576086956521738" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/science_fragment.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/sports_fragment.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/tech_fragment.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/top_fragment.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/view.xml" value="0.14266304347826086" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/world_fragment.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/menu/nav_menu.xml" value="0.2" />
       </map>
     </option>
