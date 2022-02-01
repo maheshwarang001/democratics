@@ -1,4 +1,4 @@
-package com.example.democratics.ApiDetails;
+package com.example.democratics.News.ApiDetails;
 
 public class ModelClass {
 

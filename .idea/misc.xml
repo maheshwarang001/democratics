@@ -37,6 +37,7 @@
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_login.xml" value="0.12907608695652173" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_main_news.xml" value="0.16576086956521738" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_member_parliamentent.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_news.xml" value="0.12409420289855072" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_news2.xml" value="0.264" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_quiz_question.xml" value="0.15579710144927536" />
@@ -50,6 +51,7 @@
         <entry key="..\:/Democratics2/app/src/main/res/layout/is_head_bg.xml" value="0.14266304347826086" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/item_news.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/latest_recycler_view.xml" value="0.264" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/member_of_parliament_view.xml" value="0.4" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/national_fragment.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/nav_header.xml" value="0.12907608695652173" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/politics_fragment.xml" value="0.1" />

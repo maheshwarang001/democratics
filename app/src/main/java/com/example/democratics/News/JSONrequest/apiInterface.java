@@ -1,6 +1,6 @@
-package com.example.democratics.JSONrequest;
+package com.example.democratics.News.JSONrequest;
 
-import com.example.democratics.ApiDetails.Status;
+import com.example.democratics.News.ApiDetails.Status;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

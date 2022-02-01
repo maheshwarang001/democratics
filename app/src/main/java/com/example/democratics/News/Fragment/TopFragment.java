@@ -12,12 +12,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.democratics.ApiDetails.ModelClass;
-import com.example.democratics.ApiDetails.Status;
-import com.example.democratics.JSONrequest.ApiUtilities;
+import com.example.democratics.News.ApiDetails.ModelClass;
+import com.example.democratics.News.ApiDetails.Status;
+import com.example.democratics.News.JSONrequest.ApiUtilities;
 import com.example.democratics.News.Adapter;
 import com.example.democratics.R;
-import com.google.gson.JsonObject;
 
 import java.util.ArrayList;
 

@@ -14,7 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.democratics.ApiDetails.ModelClass;
+import com.example.democratics.News.ApiDetails.ModelClass;
 import com.example.democratics.R;
 
 import java.util.ArrayList;
@@ -29,8 +29,6 @@ public class Adapter extends
         this.context = context;
         this.modelArray = modelArray;
     }
-
-
 
 
     @NonNull

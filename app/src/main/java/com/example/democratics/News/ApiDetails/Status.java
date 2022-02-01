@@ -1,4 +1,4 @@
-package com.example.democratics.ApiDetails;
+package com.example.democratics.News.ApiDetails;
 
 import java.util.ArrayList;
 

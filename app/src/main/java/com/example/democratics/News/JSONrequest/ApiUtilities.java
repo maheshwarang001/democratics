@@ -1,4 +1,4 @@
-package com.example.democratics.JSONrequest;
+package com.example.democratics.News.JSONrequest;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

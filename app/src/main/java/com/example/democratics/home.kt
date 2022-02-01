@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.democratics.MyMinisters.MemberParliamententActivity
 import com.example.democratics.News.NewsActivity
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -36,6 +37,14 @@ class home : AppCompatActivity() {
             val intent = Intent(this, Articles_main_page::class.java)
             startActivity(intent)
         }
+        mps.setOnClickListener{
+            try {
+                startActivity(Intent(this,MemberParliamententActivity::class.java))
+            }catch (e:Exception){
+                Log.e("intent crash" , e.toString())
+            }
+        }
+
         id_news.setOnClickListener {
             try {
 
