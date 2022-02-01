@@ -57,6 +57,12 @@ public class Adapter extends
         holder.mAuthor.setText(modelArray.get(position).getAuthor());
         holder.mTitle.setText(modelArray.get(position).getTitle());
 
+
+        // null image url not resolved
+
+        if(modelArray.get(position).getUrlToImage() == null){
+            holder.image.setBackgroundResource(R.color.black);
+        }
         Glide.with(context).
                 load(modelArray.get(position).
                         getUrlToImage()).into(holder.image);

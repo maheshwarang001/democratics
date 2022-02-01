@@ -17,6 +17,7 @@ import com.example.democratics.ApiDetails.Status;
 import com.example.democratics.JSONrequest.ApiUtilities;
 import com.example.democratics.News.Adapter;
 import com.example.democratics.R;
+import com.google.gson.JsonObject;
 
 import java.util.ArrayList;
 
@@ -26,7 +27,7 @@ import retrofit2.Response;
 
 public class TopFragment extends Fragment {
 
-    private String apiKey = String.valueOf(R.string.api_key);
+    private String apiKey = "3dc0a13799d4454b9b40d0abf753014f";
     private ArrayList<ModelClass> modelClassArrayList;
     private Adapter adapter;
     private String country= "in";
@@ -51,8 +52,10 @@ public class TopFragment extends Fragment {
     private void findNews() {
 
         ApiUtilities.apiInterface().getNews(country,20,apiKey).enqueue(new Callback<Status>() {
+
             @Override
             public void onResponse(Call<Status> call, Response<Status> response) {
+                Log.i("RequestUrl", call.request().url().toString());
                 if(response.isSuccessful()){
                     modelClassArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();

@@ -26,7 +26,7 @@ import retrofit2.Response;
 
 public class TechFragment extends Fragment {
 
-    private String apiKey = String.valueOf(R.string.api_key);
+    private String apiKey = "3dc0a13799d4454b9b40d0abf753014f";
     private ArrayList<ModelClass> modelClassArrayList;
     private Adapter adapter;
     private String country= "in";
@@ -54,6 +54,7 @@ public class TechFragment extends Fragment {
         ApiUtilities.apiInterface().getCategroryNews(country,category,40,apiKey).enqueue(new Callback<Status>() {
             @Override
             public void onResponse(Call<Status> call, Response<Status> response) {
+                Log.i("RequestUrl", call.request().url().toString());
                 if(response.isSuccessful()){
                     modelClassArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();

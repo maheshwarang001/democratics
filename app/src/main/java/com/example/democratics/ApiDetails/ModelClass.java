@@ -8,7 +8,8 @@ public class ModelClass {
     private String urlToImage;
     private String url;
     private String publishedAt;
-    private String source;
+   // private String source;
+    private SourceModel source;
     private String title;
 
 
@@ -63,11 +64,11 @@ public class ModelClass {
         this.publishedAt = publishedAt;
     }
 
-    public String getSource() {
+    public SourceModel getSource() {
         return source;
     }
 
-    public void setSource(String source) {
+    public void setSource(SourceModel source) {
         this.source = source;
     }
 
@@ -81,7 +82,7 @@ public class ModelClass {
 
 
 
-    public ModelClass(String content, String creator, String description,String image_url, String link, String pubDate, String source_id, String title) {
+    public ModelClass(String content, String creator, String description,String image_url, String link, String pubDate, SourceModel source_id, String title) {
         this.content = content;
         this.author = creator;
         this.description = description;

@@ -26,7 +26,7 @@ import retrofit2.Response;
 
 public class HealthFragment extends Fragment {
 
-    private String apiKey = String.valueOf(R.string.api_key);
+    private String apiKey = "3dc0a13799d4454b9b40d0abf753014f";
     private ArrayList<ModelClass> modelClassArrayList;
     private Adapter adapter;
     private String country= "in";
@@ -40,7 +40,7 @@ public class HealthFragment extends Fragment {
 
 
         recyclerView = v.findViewById(R.id.recycler_health);
-        modelClassArrayList = new ArrayList<ModelClass>();
+        modelClassArrayList = new ArrayList<>();
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new Adapter(getContext() , modelClassArrayList);
         recyclerView.setAdapter(adapter);
@@ -54,6 +54,7 @@ public class HealthFragment extends Fragment {
         ApiUtilities.apiInterface().getCategroryNews(country,category,40,apiKey).enqueue(new Callback<Status>() {
             @Override
             public void onResponse(Call<Status> call, Response<Status> response) {
+                Log.i("RequestUrl", call.request().url().toString());
                 if(response.isSuccessful()){
                     modelClassArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();

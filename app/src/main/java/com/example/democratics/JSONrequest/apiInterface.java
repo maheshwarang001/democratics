@@ -11,6 +11,7 @@ public interface apiInterface {
 
     String BASE_URL = "https://newsapi.org/v2/";
 
+
     @GET("top-headlines")
     Call<Status>getNews(
         @Query("country") String country,
