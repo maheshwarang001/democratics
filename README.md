@@ -3,6 +3,6 @@
 //features pending
 -otp
 -data firebase
--news
--memeber
--notepad
+-polling/form
+-discussion / twitter
+
