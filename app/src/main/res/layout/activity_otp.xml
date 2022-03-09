@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chatapp.FirebaseAuth.otp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:id="@+id/otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="145dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Code"
+                android:textSize="24sp"
+                android:textColor="#0F1828"
+                android:gravity="center_horizontal|top"/>
+
+            <TextView
+                android:id="@+id/number_print"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="6sp"
+                android:text="@string/we_have_sent_you_an_sms_with_the_code_to_62_1309_1710_1920"
+                android:textSize="14sp"
+                android:textColor="#0F1828"
+                android:translationY="-3.21sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/root_otp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="279dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <EditText
+                android:id="@+id/otp_edit_box1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:background="@drawable/edittext_curve_bg"/>
+
+            <EditText
+                android:id="@+id/otp_edit_box2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/edittext_curve_bg"/>
+
+            <EditText
+                android:id="@+id/otp_edit_box3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/edittext_curve_bg"/>
+
+            <EditText
+                android:id="@+id/otp_edit_box4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/edittext_curve_bg" />
+            <EditText
+                android:id="@+id/otp_edit_box5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:background="@drawable/edittext_curve_bg"/>
+            <EditText
+                android:id="@+id/otp_edit_box6"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:background="@drawable/edittext_curve_bg"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resend_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/root_otp_layout"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Resend code"
+            android:textColor="@color/butnblue"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/button_otp"
+            android:layout_width="327dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="450dp"
+            android:clipToOutline="true"
+            android:background="@drawable/button"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

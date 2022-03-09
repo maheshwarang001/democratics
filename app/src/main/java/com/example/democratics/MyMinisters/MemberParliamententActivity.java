@@ -54,7 +54,8 @@ public class MemberParliamententActivity extends AppCompatActivity  {
     private void custom() {
         recyclerViewForCustom = findViewById(R.id.custom_horizontal_recycler_view);
         arrayListCustom = new ArrayList<>();
-        recyclerViewForCustom.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        recyclerViewForCustom.setLayoutManager(new LinearLayoutManager
+                (this,LinearLayoutManager.HORIZONTAL,false));
         adapter = new MinAdapter(this, arrayListCustom);
         recyclerViewForCustom.setAdapter(adapter);
 

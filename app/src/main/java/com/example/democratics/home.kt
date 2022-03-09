@@ -10,6 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.democratics.FragmentArticles.ArcticleActivity
 import com.example.democratics.MyMinisters.MemberParliamententActivity
 import com.example.democratics.News.NewsActivity
 import com.google.android.material.navigation.NavigationView
@@ -40,6 +41,13 @@ class home : AppCompatActivity() {
         mps.setOnClickListener{
             try {
                 startActivity(Intent(this,MemberParliamententActivity::class.java))
+            }catch (e:Exception){
+                Log.e("intent crash" , e.toString())
+            }
+        }
+        articles_coi.setOnClickListener{
+            try {
+                startActivity(Intent(this,ArcticleActivity::class.java))
             }catch (e:Exception){
                 Log.e("intent crash" , e.toString())
             }

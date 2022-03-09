@@ -11,8 +11,14 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="enter_your_">Enter Your Phone Number</string>
+    <string name="please_conf">Please confirm your country code and enter your phone number</string>
+    <string name="we_have_sent_you_an_sms_with_the_code_to_62_1309_1710_1920">We have sent you an SMS with the code \n to +62 1309 – 1710 – 1920</string>
 
 
     //apikey
     <string name="api_key">3dc0a13799d4454b9b40d0abf753014f</string>
+    <string name="connect_eas">Connect easily with your family and friends over countries</string>
+    <string name="alex_thomes">Alex Thomas</string>
+    <string name="n_android_it_is_quite_usual_for_users_to_witness_a_jump_from_one_application_to_another_as_a_part_of_the_whole_process_for_example_searching_for_a_location_on_the_browser_and_witnessing_a_direct_jump_into_google_maps_or_receiving_payment_links_in_messages_application_sms_and_on_clicking_jumping_to_paypal_or_gpay_google_pay_this_process_of_taking_users_from_one_application_to_another_is_achieved_by_passing_the_intent_to_the_system_intents_in_general_are_used_for_navigating_among_various_activities_within_the_same_application_but_note_is_not_limited_to_one_single_application_i_e_they_can_be_utilized_from_moving_from_one_application_to_another_as_well_intents_could_be_implicit_for_instance_calling_intended_actions_and_explicit_as_well_such_as_opening_another_activity_after_some_operations_like_onclick_or_anything_else_below_are_some_application_of_intents_sending_the_user_to_another_app_getting_a_result_from_an_activity_allowing_other_apps_to_start_your_activity">n Android, it is quite usual for users to witness a jump from one application to another as a part of the whole process, for example, searching for a location on the browser and witnessing a direct jump into Google Maps or receiving payment links in Messages Application (SMS) and on clicking jumping to PayPal or GPay (Google Pay). This process of taking users from one application to another is achieved by passing the Intent to the system. Intents, in general, are used for navigating among various activities within the same application, but note, is not limited to one single application, i.e., they can be utilized from moving from one application to another as well. Intents could be Implicit, for instance, calling intended actions and explicit as well, such as opening another activity after some operations like onClick or anything else. Below are some application of Intents: Sending the User to Another App Getting a Result from an Activity Allowing Other Apps to Start Your Activity</string>
 </resources>

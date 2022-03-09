@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_header"
+    android:orientation="vertical"
+    tools:context=".FragmentArticles.ArticleMain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:foreground="#96222f3e"
+        android:foregroundTintMode="src_atop"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/coi_image" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="40dp"
+        android:background="#80B6AEAE"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/art_id_coi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Article 1"
+            android:textColor="#ffff"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/art_title_coi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#0B9BF4" />
+
+                <TextView
+                    android:id="@+id/art_des_coi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:letterSpacing="0.1"
+                    android:lineSpacingExtra="1dp"
+                    android:lineSpacingMultiplier="1"
+                    android:text="@string/n_android_it_is_quite_usual_for_users_to_witness_a_jump_from_one_application_to_another_as_a_part_of_the_whole_process_for_example_searching_for_a_location_on_the_browser_and_witnessing_a_direct_jump_into_google_maps_or_receiving_payment_links_in_messages_application_sms_and_on_clicking_jumping_to_paypal_or_gpay_google_pay_this_process_of_taking_users_from_one_application_to_another_is_achieved_by_passing_the_intent_to_the_system_intents_in_general_are_used_for_navigating_among_various_activities_within_the_same_application_but_note_is_not_limited_to_one_single_application_i_e_they_can_be_utilized_from_moving_from_one_application_to_another_as_well_intents_could_be_implicit_for_instance_calling_intended_actions_and_explicit_as_well_such_as_opening_another_activity_after_some_operations_like_onclick_or_anything_else_below_are_some_application_of_intents_sending_the_user_to_another_app_getting_a_result_from_an_activity_allowing_other_apps_to_start_your_activity"
+                    android:textColor="#ffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

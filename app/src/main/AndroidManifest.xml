@@ -3,6 +3,7 @@
     package="com.example.democratics">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Democratics">
         <activity
-            android:name=".MyMinisters.MemberParliamententActivity"
+            android:name=".FragmentArticles.ArticleFavouriteCOi"
             android:exported="false"
-            />
+            android:label="Bookmark"/>
+        <activity
+            android:name=".FragmentArticles.ArticleMain"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentArticles.ArcticleActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MyMinisters.MemberParliamententActivity"
+            android:exported="false" />
         <activity
             android:name=".News.NewsActivity"
             android:exported="false"
@@ -54,18 +64,44 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme" />
+        <activity
+            android:name="com.example.chatapp.FirebaseAuth.verification1"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="com.example.chatapp.FirebaseAuth.otp"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login.intro"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="com.example.chatapp.Register.UserActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Login.splashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoActionBarTheme" />
 
         <meta-data
             android:name="preloaded_fonts"

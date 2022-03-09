@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/walkthrough"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToOutline="true"
+        android:background="@drawable/walkthrough">
+
+        <ImageView
+            android:layout_width="262dp"
+            android:layout_height="272dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="111dp"
+            android:src="@drawable/img1" />
+
+        <TextView
+            android:id="@+id/connect_eas"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="424dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal|top"
+            android:text="@string/connect_eas"
+            android:textColor="#0F1828"
+            android:textSize="24sp" />
+        <!-- Button -->
+        <RelativeLayout
+            android:id="@+id/button"
+            android:layout_width="327dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="650dp"
+            android:clipToOutline="true"
+            android:background="@drawable/button"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Start messaging"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

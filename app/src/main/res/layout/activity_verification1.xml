@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chatapp.FirebaseAuth.verification1">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:id="@+id/number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/text_contain"
+            android:layout_width="295dp"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="145dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/enter_your_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:text="@string/enter_your_"
+                android:textColor="#0F1828"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/please_conf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="6sp"
+                android:text="@string/please_conf"
+                android:textColor="#0F1828"
+                android:textSize="14sp"
+                android:translationY="-3.21sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/wrapper"
+            android:layout_width="327dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="279dp">
+            <!-- Country Code -->
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countrypicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="false"
+                tools:ccp_textSize="20dp" />
+
+            <EditText
+                android:id="@+id/phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/countrypicker"
+                android:gravity="bottom|start"
+                android:hint="8928185841"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_otp"
+            android:layout_width="327dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:clipToOutline="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
