@@ -141,7 +141,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/lato_black"
                             android:gravity="center"
-                            android:text=" Birth of Indian  Constitution"
+                            android:text="Constitution"
                             android:textColor="#7159CF"
                             android:textSize="22sp" />
                     </LinearLayout>
@@ -189,7 +189,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/lato_black"
                             android:gravity="center"
-                            android:text="Post"
+                            android:text="Connect"
                             android:textColor="#D84DCA"
                             android:textSize="22sp" />
                     </LinearLayout>
