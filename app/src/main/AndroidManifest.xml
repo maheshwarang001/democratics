@@ -13,15 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Democratics">
         <activity
+            android:name=".MainStreamChat.MainActivityStreamHD"
+            android:exported="false" />
+        <activity
+            android:name=".MainStreamChat.CustomStreamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainStreamChat.MainActivityStream"
+            android:exported="false" />
+        <activity
             android:name=".FragmentArticles.ArticleFavouriteCOi"
             android:exported="false"
-            android:label="Bookmark"/>
+            android:label="Bookmark" />
         <activity
             android:name=".FragmentArticles.ArticleMain"
             android:exported="false" />
         <activity
             android:name=".FragmentArticles.ArcticleActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MyMinisters.MemberParliamententActivity"
             android:exported="false" />

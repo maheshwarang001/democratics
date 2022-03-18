@@ -52,7 +52,7 @@ class db(context: Context) :
 
     @SuppressLint("Range", "Recycle")
     fun viewData(): ArrayList<modelclass> {
-        val empList: ArrayList<modelclass> = ArrayList<modelclass>()
+        val empList: ArrayList<modelclass> = ArrayList()
 
         val select = "SELECT * FROM $TABLE_DB"
         val db = this.readableDatabase
@@ -83,7 +83,7 @@ class db(context: Context) :
         return empList
     }
 
-    fun updateEmployee(emp: modelclass): Int {
+    fun updateData(emp: modelclass): Int {
         val db = this.writableDatabase
         val contentValues = ContentValues()
         contentValues.put(KEY_NUMBER, emp.artNumber) // EmpModelClass Name

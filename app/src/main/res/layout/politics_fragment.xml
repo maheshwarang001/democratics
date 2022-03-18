@@ -4,6 +4,7 @@
     android:layout_height="wrap_content">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:background="#E0CECE"
         android:id="@+id/recycler_politics"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

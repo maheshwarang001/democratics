@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="370dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/background_image"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"
         android:elevation="5dp"
-        app:cardCornerRadius="20dp"
-        android:layout_marginBottom="20dp">
+        app:cardCornerRadius="20dp">
 
         <ImageView
             android:id="@+id/news_image"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@color/black"
+            android:contentDescription="image"
             android:scaleType="fitXY"
-            android:contentDescription = "image" />
+            android:src="#0D000000" />
 
 
         <TextView
             android:id="@+id/news_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|start"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="50dp"
-            android:textSize="8sp"
-            android:text="by mahesh"
+            android:layout_gravity="bottom|end"
             android:elevation="10dp"
-            android:textColor="@color/white"/>
-
+            android:padding="5dp"
+            android:text="by mahesh"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
 
 
         <TextView
             android:id="@+id/news_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="68dp"
             android:layout_gravity="bottom|start"
             android:layout_marginStart="20dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginEnd="20dp"
-            android:textSize="15sp"
-            android:text="use a 'dumb phone' that only makes calls &amp; sends texts: 'Breaking Bad' actor"
+            android:layout_marginBottom="30dp"
+            android:background="#33B6B2B2"
             android:elevation="10dp"
-            android:textColor="@color/white"/>
+            android:text="use a 'dumb phone' that only makes calls &amp; sends texts: 'Breaking Bad' actor"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
 
     </androidx.cardview.widget.CardView>

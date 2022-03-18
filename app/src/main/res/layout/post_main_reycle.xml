@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/post_recycle_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/post_btn"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_baseline_add_24"
+        app:maxImageSize="50dp"
+        app:tintMode="#ffff"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:backgroundTint="#0948F4"
+        android:layout_marginTop="-80dp" />
+
+
+</LinearLayout>

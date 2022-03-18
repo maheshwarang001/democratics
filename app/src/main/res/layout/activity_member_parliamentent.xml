@@ -12,41 +12,42 @@
         android:layout_height="?attr/actionBarSize" />
 
 
+    <TextView
+        android:id="@+id/text_view_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:layout_marginBottom="2dp"
+        android:text="Maharashtra"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/text_view_custom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/searchView"
-            android:layout_marginBottom="2dp"
-            android:text="Maharashtra"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/custom_horizontal_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_below="@+id/text_view_custom"
-            android:scrollbars="horizontal" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/custom_horizontal_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/text_view_custom"
+        android:background="#EADFDF"
+        android:scrollbars="horizontal" />
 
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/custom_horizontal_recycler_view"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="2dp"
-            android:text="All"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_horizontal_recycler_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:text="All"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_all_mop"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/text"
-            android:layout_marginTop="5dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_all_mop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="5dp"
+        android:background="#EADFDF" />
 
 </RelativeLayout>

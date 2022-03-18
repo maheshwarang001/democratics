@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.democratics.FragmentArticles.ArcticleActivity
+import com.example.democratics.MainStreamChat.MainActivityStreamHD
 import com.example.democratics.MyMinisters.MemberParliamententActivity
 import com.example.democratics.News.NewsActivity
 import com.google.android.material.navigation.NavigationView
@@ -37,6 +38,13 @@ class home : AppCompatActivity() {
         Articles.setOnClickListener {
             val intent = Intent(this, Articles_main_page::class.java)
             startActivity(intent)
+        }
+        stream_id.setOnClickListener{
+            try {
+                startActivity(Intent(this,MainActivityStreamHD::class.java))
+            }catch (e:Exception){
+                Log.e("intent crash" , e.toString())
+            }
         }
         mps.setOnClickListener{
             try {

@@ -175,7 +175,7 @@ class UserActivity : AppCompatActivity() {
 
 
     companion object {
-        private const val READ_EXTERNAL_STORAGE_PERMISSION_CODE = 1
-        private const val GALLERY = 2
+        const val READ_EXTERNAL_STORAGE_PERMISSION_CODE = 1
+        const val GALLERY = 2
     }
 }
