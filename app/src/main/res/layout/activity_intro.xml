@@ -22,8 +22,8 @@
 
         <TextView
             android:id="@+id/connect_eas"
-            android:layout_width="280dp"
-            android:layout_height="90dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="47dp"
@@ -32,7 +32,7 @@
             android:gravity="center_horizontal|top"
             android:text="@string/connect_eas"
             android:textColor="#0F1828"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
         <!-- Button -->
         <RelativeLayout
             android:id="@+id/button"
@@ -45,13 +45,14 @@
             android:clipToOutline="true"
             android:background="@drawable/button"
             android:layout_marginBottom="10dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Start messaging"
+                android:text="Join the community"
                 android:textColor="@color/white"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
         </RelativeLayout>
 
     </RelativeLayout>

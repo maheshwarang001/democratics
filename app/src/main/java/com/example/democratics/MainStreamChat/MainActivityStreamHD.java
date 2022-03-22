@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.democratics.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,7 +37,7 @@ public class MainActivityStreamHD extends AppCompatActivity {
         setContentView(R.layout.post_main_reycle);
 
 
-        TextView postbtn = findViewById(R.id.post_btn);
+        FloatingActionButton postbtn = findViewById(R.id.post_btn);
         recyclerView = findViewById(R.id.post_recycle_main);
         swipeRefreshLayout = findViewById(R.id.refresh);
 

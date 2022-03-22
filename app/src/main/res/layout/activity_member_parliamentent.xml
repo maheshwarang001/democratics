@@ -31,11 +31,20 @@
         android:scrollbars="horizontal" />
 
 
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/custom_horizontal_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="20dp"/>
+
+
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/custom_horizontal_recycler_view"
+        android:layout_below="@+id/view"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="2dp"
         android:text="All"
