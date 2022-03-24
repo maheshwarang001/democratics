@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.chatapp.Register.UserActivity
+import com.example.democratics.FirebaseAuth.Number
 import com.example.democratics.R
 import com.example.democratics.home
 import com.google.firebase.FirebaseException
@@ -41,10 +42,14 @@ class otp : AppCompatActivity() {
         try {
             PHONE = intent.getStringExtra("phone")!!
             number_print.text = "We have sent you an SMS with the code \n to $PHONE"
+
+            val numberset = Number()
+            numberset.number = "$PHONE"
         } catch (e: Exception) {
             Toast.makeText(this, "Number not found", Toast.LENGTH_SHORT).show()
             onBackPressed()
         }
+
         try {
             startPhoneNumberVerification(PHONE)
         } catch (e: Exception) {
@@ -58,11 +63,11 @@ class otp : AppCompatActivity() {
                 Log.d("verify", "checkCode")
             } catch (e: Exception) {
                 Log.d("verify Failed", "checkCode error")
-                Toast.makeText(this,"Incorrect code",Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Incorrect code", Toast.LENGTH_LONG).show()
             }
         }
         resend_otp.setOnClickListener {
-            resendVerificationCode(PHONE,resendToken)
+            resendVerificationCode(PHONE, resendToken)
         }
     }
 
@@ -85,19 +90,13 @@ class otp : AppCompatActivity() {
 
         callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             override fun onVerificationCompleted(credential: PhoneAuthCredential) {
-                // This callback will be invoked in two situations:
-                // 1 - Instant verification. In some cases the phone number can be instantly
-                //     verified without needing to send or enter a verification code.
-                // 2 - Auto-retrieval. On some devices Google Play services can automatically
-                //     detect the incoming verification SMS and perform verification without
-                //     user action.
+
                 Log.d(TAG, "onVerificationCompleted:$credential")
                 signInWithPhoneAuthCredential(credential)
             }
 
             override fun onVerificationFailed(e: FirebaseException) {
-                // This callback is invoked in an invalid request for verification is made,
-                // for instance if the the phone number format is not valid.
+
                 Log.w(TAG, "onVerificationFailed", e)
 
                 if (e is FirebaseAuthInvalidCredentialsException) {
@@ -106,19 +105,16 @@ class otp : AppCompatActivity() {
                     Log.d(TAG, e.toString())
                 }
 
-                // Show a message and update the UI
+
             }
 
             override fun onCodeSent(
                 verificationId: String,
                 token: PhoneAuthProvider.ForceResendingToken
             ) {
-                // The SMS verification code has been sent to the provided phone number, we
-                // now need to ask the user to enter the code and then construct a credential
-                // by combining the code with a verification ID.
+
                 Log.d("got", "onCodeSent:$verificationId")
 
-                // Save verification ID and resending token so we can use them later
                 storedVerificationId = verificationId
                 resendToken = token
             }
@@ -127,7 +123,7 @@ class otp : AppCompatActivity() {
     }
 
     private fun startPhoneNumberVerification(phoneNumber: String) {
-        // [START start_phone_auth]
+
         val options = PhoneAuthOptions.newBuilder(auth)
             .setPhoneNumber(phoneNumber)       // Phone number to verify
             .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
@@ -172,6 +168,8 @@ class otp : AppCompatActivity() {
                 if (task.isSuccessful) {
                     if (task.result?.additionalUserInfo?.isNewUser == true) {
                         showSignUpActivity()
+
+                        Log.d("New USer", "New user, showSignUpActivity")
                     } else {
                         showHomeActivity()
                     }
@@ -203,5 +201,6 @@ class otp : AppCompatActivity() {
 
     companion object {
         private const val TAG = "PhoneAuthActivity"
+
     }
 }

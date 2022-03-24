@@ -42,7 +42,24 @@ public class StreamAdapter extends RecyclerView.Adapter<StreamAdapter.ViewHolder
         holder.context.setText(modelInputStreams.get(position).getContext());
         holder.date.setText(modelInputStreams.get(position).getDate());
 
+        holder.like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                holder.like.setColorFilter(v.getContext().getResources().getColor(R.color.butnblue));
+                holder.dislike.setColorFilter(v.getContext().getResources().getColor(R.color.black));
+            }
+        });
+
+
+        holder.dislike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                holder.dislike.setColorFilter(v.getContext().getResources().getColor(R.color.butnblue));
+                holder.like.setColorFilter(v.getContext().getResources().getColor(R.color.black));
+            }
+        });
 
 
 
@@ -68,6 +85,8 @@ public class StreamAdapter extends RecyclerView.Adapter<StreamAdapter.ViewHolder
         TextView context;
         ImageView image;
         TextView date;
+        ImageView like;
+        ImageView dislike;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -76,6 +95,8 @@ public class StreamAdapter extends RecyclerView.Adapter<StreamAdapter.ViewHolder
             context = itemView.findViewById(R.id.context_upload);
             image = itemView.findViewById(R.id.image_post);
             date = itemView.findViewById(R.id.date_post);
+            like = itemView.findViewById(R.id.positive);
+            dislike = itemView.findViewById(R.id.negative);
         }
     }
 }

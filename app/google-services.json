@@ -1,20 +1,21 @@
 {
   "project_info": {
     "project_number": "69170014833",
+    "firebase_url": "https://democratics-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "democratics",
     "storage_bucket": "democratics.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:69170014833:android:593c640540964969ff09d0",
+        "mobilesdk_app_id": "1:69170014833:android:2208de60e85ab6faff09d0",
         "android_client_info": {
           "package_name": "com.example.democratics"
         }
       },
       "oauth_client": [
         {
-          "client_id": "69170014833-2pb8a9ou1g4033hcnbrjt3dvljqgjjfr.apps.googleusercontent.com",
+          "client_id": "69170014833-ejd347gt2vj1r7jv6532f69mj3th71q7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.democratics",

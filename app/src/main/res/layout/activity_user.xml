@@ -1,75 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fillViewport="true">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/actionbar_signUp"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize" />
-
-    <RelativeLayout
-        android:id="@+id/profile_ctn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/actionbar_signUp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/image_bg"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/profile_dp"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@color/white"
-            android:elevation="10dp"
-            android:src="@drawable/ic_baseline_person_add_24" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profile_ctn"
-        android:layout_marginTop="50dp"
-        android:padding="20dp">
+        android:background="@color/graylight"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="405dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:background="@drawable/gradient"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ed_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:src="#80FFFFFF" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/textfield_lg"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:paddingLeft="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:hint="@string/alex_thomes"
-                android:inputType="text"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_baseline_drive_file_rename_outline_24"
+                    app:tint="#09c6df" />
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:textStyle="bold"
+                    android:hint="Name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:paddingLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_baseline_abc_24"
+                    app:tint="#09c6df"
+                    />
+                <EditText
+                    android:id="@+id/ed_bio"
+                    android:hint="What a day it's!"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:paddingLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_email"/>
+                <EditText
+                    android:hint="dssda@gmail.com"
+                    android:id="@+id/ed_mail"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    />
+            </LinearLayout>
+
+
         </LinearLayout>
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/button_signup"
-        android:layout_width="327dp"
-        android:layout_height="52dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="47dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/button"
-        android:clipToOutline="true">
+        <Button
+            android:id="@+id/ed_btn"
+            android:background="@drawable/button1"
+            android:textColor="#FFF"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Edit profile"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Next"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-    </RelativeLayout>
-
-</RelativeLayout>
+    </LinearLayout>
+</ScrollView>

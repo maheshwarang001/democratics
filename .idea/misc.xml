@@ -14,14 +14,23 @@
         <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/switch_theme_track.xml" value="0.137" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/switch_thumb_theme_false.xml" value="0.137" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable-v24/switch_thumb_theme_true.xml" value="0.137" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/back_to_home_button.xml" value="0.1615" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/button.xml" value="0.1305" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/button1.xml" value="0.1615" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/correct_option.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/edittext_curve_bg.xml" value="0.1305" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/gradient.xml" value="0.1615" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_baseline_abc_24.xml" value="0.1615" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_baseline_drive_file_rename_outline_24.xml" value="0.1615" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_baseline_grade_24.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.1305" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_email.xml" value="0.1615" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_forum.xml" value="0.1615" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_head_bg.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_person_add.xml" value="0.1615" />
+        <entry key="..\:/Democratics2/app/src/main/res/drawable/ic_phone_android.xml" value="0.1615" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/image_bg.xml" value="0.1305" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/medal.xml" value="0.2203125" />
         <entry key="..\:/Democratics2/app/src/main/res/drawable/option_bg.xml" value="0.2203125" />
@@ -43,18 +52,19 @@
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_intro.xml" value="0.2" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_login.xml" value="0.12907608695652173" />
-        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_main_news.xml" value="0.16576086956521738" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_member_parliamentent.xml" value="0.2" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_news.xml" value="0.12409420289855072" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_news2.xml" value="0.264" />
-        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_otp.xml" value="0.1" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_otp.xml" value="0.16" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_profile.xml" value="0.19791666666666666" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_quiz_question.xml" value="0.15579710144927536" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_register.xml" value="0.15579710144927536" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_result.xml" value="0.15579710144927536" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/activity_startquiz.xml" value="0.1621376811594203" />
-        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_user.xml" value="0.1" />
-        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_verification1.xml" value="0.16" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_user.xml" value="0.152" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/activity_verification1.xml" value="0.2" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/art_recyleradapter_coi.xml" value="0.19791666666666666" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/business_fragment.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/categories_recycler.xml" value="0.2" />
@@ -75,6 +85,7 @@
         <entry key="..\:/Democratics2/app/src/main/res/layout/post_custom.xml" value="0.176" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/post_main_reycle.xml" value="0.152" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/post_upload_custom.xml" value="0.19791666666666666" />
+        <entry key="..\:/Democratics2/app/src/main/res/layout/profile.xml" value="0.2" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/rv_news_article_layout.xml" value="0.16576086956521738" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/science_fragment.xml" value="0.1" />
         <entry key="..\:/Democratics2/app/src/main/res/layout/sports_fragment.xml" value="0.1" />

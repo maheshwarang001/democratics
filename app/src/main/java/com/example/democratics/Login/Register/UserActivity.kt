@@ -7,13 +7,13 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.democratics.FirebaseAuth.Number
+import com.example.democratics.Login.profileActivity
 import com.example.democratics.R
-import com.example.democratics.home
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -25,36 +25,72 @@ import kotlinx.android.synthetic.main.activity_user.*
 class UserActivity : AppCompatActivity() {
     lateinit var Auth: FirebaseAuth
     lateinit var imageURI: Uri
+    lateinit var number: String
+
     val database by lazy {
         FirebaseFirestore.getInstance()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_user)
 
+        try {
+            val getNumber = Number()
+            number = getNumber.number
+        } catch (e: Exception) {
+            number = ""
+        }
 
         Auth = Firebase.auth
 
 
-        profile_dp.setOnClickListener {
+
+        ed_image.setOnClickListener {
             openGallery()
         }
-        button_signup.setOnClickListener {
-            if (textfield_lg.text.isNullOrEmpty()  || !this::imageURI.isInitialized) {
+
+        ed_btn.setOnClickListener {
+
+
+            if (ed_name.text.isNullOrEmpty() ||
+                ed_mail.text.isNullOrEmpty() ||
+                ed_bio.text.isNullOrEmpty() ||
+                !this::imageURI.isInitialized) {
                 Toast.makeText(this, "Image/Name cannot be empty", Toast.LENGTH_LONG).show()
+
             } else {
 
-                val user = User(Auth.uid!!, textfield_lg.text!!.toString(), imageURI.toString())
+
+                val user = com.example.democratics.Login.Register.User(
+                    ed_name.text!!.toString(),
+                    Auth.uid!!,
+                    "+91 8928185841",
+                    imageURI.toString(),
+                    ed_bio.text!!.toString(),
+                    ed_mail.text.toString()
+                )
+
+                /*   val user =
+                       User(Auth.uid!!, textfield_lg.text!!.toString(), number, imageURI.toString())*/
+
+
                 database.collection("user").document(Auth.uid!!).set(user, SetOptions.merge())
-                    .addOnSuccessListener {it: Any? ->    // solved null pointer exception by assigning type any to lambda
+                    .addOnSuccessListener { it: Any? ->    // solved null pointer exception by assigning type any to lambda
                         Log.d("suc", "DocumentSnapshot successfully written!")
-                        startActivity(Intent(this, home::class.java))
+                        Toast.makeText(this,"Data uploaded",Toast.LENGTH_SHORT).show()
+
+                        startActivity(Intent(this,profileActivity::class.java))
+
+
+
+
                     }
                     .addOnFailureListener { e -> Log.w("fai", "Error writing document", e) }
             }
         }
     }
+
 
 
     private fun openGallery() {
@@ -130,8 +166,8 @@ class UserActivity : AppCompatActivity() {
                 try {
                     if (data!!.data != null) {
                         Log.d("image", "import image")
-                        profile_dp.setImageURI(data.data)
-                        profile_dp.setScaleType(ImageView.ScaleType.FIT_XY)
+                       ed_image.setImageURI(data.data)
+
 
                         uploadImageFirebase(data.data!!)
                     } else {
@@ -146,7 +182,7 @@ class UserActivity : AppCompatActivity() {
     }
 
     private fun uploadImageFirebase(image: Uri) {
-        button_signup.isEnabled = false
+        ed_btn.isEnabled = false
         var ref =
             FirebaseStorage.getInstance().reference.child("upload/${Auth.uid}")
         var upload = ref.putFile(image)
@@ -163,13 +199,13 @@ class UserActivity : AppCompatActivity() {
                 task.result
                 imageURI = task.result!!
                 Log.d("upload done", task.result.toString())
-                button_signup.isEnabled = true
+                ed_btn.isEnabled = true
             } else {
                 // Handle failures
                 // ...
             }
         }.addOnFailureListener {
-            button_signup.isEnabled = true
+            ed_btn.isEnabled = true
         }
     }
 

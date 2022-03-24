@@ -38,11 +38,13 @@
         android:weightSum="3">
 
         <ImageView
+            android:id="@+id/positive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic_baseline_thumb_up_off_alt_24"/>
         <ImageView
+            android:id="@+id/negative"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

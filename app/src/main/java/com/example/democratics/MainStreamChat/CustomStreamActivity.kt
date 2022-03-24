@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.provider.MediaStore
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
@@ -50,18 +51,24 @@ class CustomStreamActivity : AppCompatActivity() {
 
         upload_post.setOnClickListener {
 
+
+
             Log.d("image uri", "$imageUrl")
 
             try {
                 onCLickbtn(imageUrl.toString())
+                post_progress.visibility = View.GONE
             } catch (e: Exception) {
                 Log.d("Exception on CLick", "$e")
+                Toast.makeText(this,"Error uploading",Toast.LENGTH_SHORT).show()
+                post_progress.visibility = View.GONE
             }
         }
 
     }
 
     private fun imageclick() {
+
         openGallery()
     }
 
@@ -141,6 +148,7 @@ class CustomStreamActivity : AppCompatActivity() {
                         Log.d("image", "import image")
 
                         uploadImageFirebase(data.data!!)
+                        progress_image.visibility = View.VISIBLE
 
                         imageURI = data.data!!
                         upload_image.setImageURI(data.data!!)
@@ -160,6 +168,10 @@ class CustomStreamActivity : AppCompatActivity() {
 
     private fun uploadImageFirebase(image: Uri) {
 
+
+
+        upload_post.isEnabled = false
+
         val ref =
             FirebaseStorage.getInstance().reference.child("upload/${Auth.uid}" + "/" + System.currentTimeMillis())
         val upload = ref.putFile(image)
@@ -178,9 +190,13 @@ class CustomStreamActivity : AppCompatActivity() {
 
 
                         imageUrl = task.result!!
+                        upload_post.isEnabled = true
+                        progress_image.visibility = View.GONE
+
 
 
                         Toast.makeText(this,"Image Uploaded" , Toast.LENGTH_SHORT).show()
+
 
                         try {
 
@@ -201,6 +217,8 @@ class CustomStreamActivity : AppCompatActivity() {
 
                 }.addOnFailureListener {
                     Log.e("ON Failure Storage", "$it")
+                    progress_image.visibility = View.GONE
+                    Toast.makeText(this,"failure uploading",Toast.LENGTH_SHORT).show()
 
                 }
         }
@@ -216,6 +234,7 @@ class CustomStreamActivity : AppCompatActivity() {
                 .show()
         } else {
 
+            post_progress.visibility = View.VISIBLE
 
             try {
 

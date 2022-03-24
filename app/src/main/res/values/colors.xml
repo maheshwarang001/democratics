@@ -34,7 +34,10 @@
     <color name="button_disabled">#efefef</color>
     <color name="butnblue">#002DE3</color>
     <color name="grey">#DCDCDC</color>
-
+    <color name="primaryDark">#292b3d</color>
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
 
 
 </resources>

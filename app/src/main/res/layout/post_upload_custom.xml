@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#80F2E7E3"
     android:orientation="vertical"
-    android:padding="20dp"
-    android:background="#80F2E7E3">
+    android:padding="20dp">
 
 
     <EditText
@@ -14,20 +14,38 @@
         android:layout_marginTop="10dp"
         android:hint="Title : Whats your plan?"
         android:textSize="15sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/upload_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:src="#80DBCDCD" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_below="@id/upload_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-150dp"
+        android:indeterminate="true"
+        android:id="@+id/progress_image"/>
+
 
     <EditText
+        android:layout_below="@+id/upload_image"
         android:id="@+id/upload_context"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="I am doing alright!!!"
         android:textSize="15sp" />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/upload_post"
@@ -41,5 +59,12 @@
         android:textColor="#fff"
         android:textSize="15sp" />
 
-
+    <ProgressBar
+        android:id="@+id/post_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:visibility="gone"/>
 </LinearLayout>

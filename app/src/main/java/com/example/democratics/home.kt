@@ -1,16 +1,17 @@
 package com.example.democratics
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.democratics.FragmentArticles.ArcticleActivity
+import com.example.democratics.Login.profileActivity
 import com.example.democratics.MainStreamChat.MainActivityStreamHD
 import com.example.democratics.MyMinisters.MemberParliamententActivity
 import com.example.democratics.News.NewsActivity
@@ -21,6 +22,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 class home : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
+    lateinit var Auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,10 +37,10 @@ class home : AppCompatActivity() {
             val intent = Intent(this, STARTQUIZ::class.java)
             startActivity(intent)
         }
-        Articles.setOnClickListener {
-            val intent = Intent(this, Articles_main_page::class.java)
-            startActivity(intent)
-        }
+
+       profile.setOnClickListener {
+           startActivity(Intent(this,profileActivity::class.java))
+       }
         stream_id.setOnClickListener{
             try {
                 startActivity(Intent(this,MainActivityStreamHD::class.java))
@@ -91,20 +93,31 @@ class home : AppCompatActivity() {
                 R.id.nav_home -> {
                     drawerLayout.closeDrawer(GravityCompat.START)
                 }
-                R.id.nav_about -> Toast.makeText(this, "ABOUT", Toast.LENGTH_SHORT).show()
-                R.id.settings -> Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show()
+
                 R.id.User_id -> {
-                    val intent = Intent(this, MainActivity::class.java)
-                    intent.putExtra("user-id", userid)
-                    intent.putExtra("email", email_page1)
-                    startActivity(intent)
+
+                    startActivity(Intent(this,profileActivity::class.java))
                 }
                 R.id.nav_log_out -> {
                     FirebaseAuth.getInstance().signOut()
                     startActivity(Intent(this, LoginActivity::class.java))
                     finish()
                 }
-                R.id.nav_share -> Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show()
+                R.id.nav_share -> {
+                    val mssg = "Hey, I'm using this amazing app called Democratics. App link: https://drive.google.com/drive/u/0/folders/1TNL-tqcNbOJcNr2FDyA3wKQe_FWYgwL3"
+                    val sendIntent = Intent().apply {
+                        action = Intent.ACTION_SEND
+                        putExtra(Intent.EXTRA_TEXT, mssg)
+                        type = "text/plain"
+                    }
+
+                    try {
+                        startActivity(sendIntent)
+                    } catch (e: ActivityNotFoundException) {
+                        Log.e("THIS",e.toString())
+
+                    }
+                }
             }
             true
         }
