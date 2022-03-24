@@ -1,8 +1,5 @@
 # democratics
 
-//features pending
--otp
--data firebase
--polling/form
--discussion / twitter
 
+
+https://drive.google.com/file/d/15opQ6E7-xLwkhd-QjZFkUvfm00f0i7cB/view?usp=sharing
