@@ -44,11 +44,7 @@
             android:name=".News.NewsActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
-            android:name=".Articles_main_page"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/NoActionBarTheme" />
+
         <activity
             android:name=".ResultActivity"
             android:exported="true"

@@ -95,6 +95,7 @@ class home : AppCompatActivity() {
                     drawerLayout.closeDrawer(GravityCompat.START)
                 }
 
+
                 R.id.User_id -> {
 
                     startActivity(Intent(this,profileActivity::class.java))
