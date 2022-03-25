@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.democratics.FragmentArticles.ArcticleActivity
+import com.example.democratics.Login.intro
 import com.example.democratics.Login.profileActivity
 import com.example.democratics.MainStreamChat.MainActivityStreamHD
 import com.example.democratics.MyMinisters.MemberParliamententActivity
@@ -100,7 +101,7 @@ class home : AppCompatActivity() {
                 }
                 R.id.nav_log_out -> {
                     FirebaseAuth.getInstance().signOut()
-                    startActivity(Intent(this, LoginActivity::class.java))
+                    startActivity(Intent(this,intro::class.java))
                     finish()
                 }
                 R.id.nav_share -> {

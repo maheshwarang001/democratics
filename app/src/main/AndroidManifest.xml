@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Democratics">
         <activity
+            android:name=".FragmentArticles.BookmarkActivity"
+            android:exported="false" />
+        <activity
             android:name=".Login.profileActivity"
             android:exported="false" />
         <activity

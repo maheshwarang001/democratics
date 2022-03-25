@@ -7,6 +7,7 @@
     android:background="#F1E4E4">
 
     <LinearLayout
+        android:id="@+id/click_fav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
