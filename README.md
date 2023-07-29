@@ -1,2 +1,2 @@
 # democratics
-https://drive.google.com/file/d/15opQ6E7-xLwkhd-QjZFkUvfm00f0i7cB/view?usp=sharing
+https://drive.google.com/file/d/1H_9lztkOK_lQok6sHglw6zC6AVh0yv2-/view?usp=drivesdk
