@@ -1,4 +1,5 @@
 <h1>Democratics</h1>
+
 ![HJMtx8wfbUkd_1024_500](https://github.com/maheshwarang001/democratics/assets/76471375/2ec0566b-5325-434f-8a44-20bd5efd75a3)
 
 
