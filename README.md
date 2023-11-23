@@ -1,3 +1,7 @@
+
+![HJMtx8wfbUkd_1024_500](https://github.com/maheshwarang001/democratics/assets/76471375/2ec0566b-5325-434f-8a44-20bd5efd75a3)
+
+
 <!-- Use Case -->
 <h2>Use Case</h2>
 <img src="https://github.com/maheshwarang001/democratics/assets/76471375/7fff959b-59ab-4faa-a5a6-54906256eaaf" width="500" height="500">
