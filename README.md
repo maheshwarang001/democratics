@@ -2,6 +2,7 @@
 
 ![HJMtx8wfbUkd_1024_500](https://github.com/maheshwarang001/democratics/assets/76471375/2ec0566b-5325-434f-8a44-20bd5efd75a3)
 
+<h2>Link to download APK </h2> https://drive.google.com/file/d/1GH-3MZ7B3PtvPG0h_ebzCR3VOlNvn0Lw/view?usp=sharing
 
 <h2>Description</h2>
 Introducing "Democratics," a revolutionary Android app designed to foster political literacy and civic engagement. Democratics provides users with comprehensive access to their country's constitution, empowering them with the knowledge necessary to make informed political decisions. With a user-friendly interface, the app ensures easy navigation through the intricacies of legal frameworks.
