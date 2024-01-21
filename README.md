@@ -12,10 +12,6 @@ Engage in meaningful discussions on the app's threaded forum, where users can sh
 Democratics is not just an app; it's a platform for individuals to become active participants in the democratic process. Elevate your political literacy, stay informed, and contribute to a more engaged and empowered society with Democratics – the ultimate companion for responsible and informed citizenship.
 
 
-<!-- Use Case -->
-<h2>Use Case</h2>
-<img src="https://github.com/maheshwarang001/democratics/assets/76471375/7fff959b-59ab-4faa-a5a6-54906256eaaf" width="500" height="500">
-
 <!-- Login Page -->
 <h2>Login Page</h2>
 <img src="https://github.com/maheshwarang001/democratics/assets/76471375/0fb509b8-b2d3-4880-8a6f-a5184edc88fc" width="300" height="500">
